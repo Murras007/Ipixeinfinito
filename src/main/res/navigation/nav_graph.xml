@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ramossoft.ipixelinfinito.UI.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_createUserFragment"
+            app:destination="@id/createUserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_getUserFragment"
+            app:destination="@id/getUserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_replaceUserFragment"
+            app:destination="@id/replaceUserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_deleteUserFragment"
+            app:destination="@id/deleteUserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_paymentInformationFragment"
+            app:destination="@id/paymentInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createUserFragment"
+        android:name="com.ramossoft.ipixelinfinito.UI.CreateUserFragment"
+        android:label="fragment_create_user"
+        tools:layout="@layout/fragment_create_user" />
+    <fragment
+        android:id="@+id/getUserFragment"
+        android:name="com.ramossoft.ipixelinfinito.UI.GetUserFragment"
+        android:label="fragment_get_user"
+        tools:layout="@layout/fragment_get_user" />
+    <fragment
+        android:id="@+id/replaceUserFragment"
+        android:name="com.ramossoft.ipixelinfinito.UI.ReplaceUserFragment"
+        android:label="fragment_replace_user"
+        tools:layout="@layout/fragment_replace_user" />
+    <fragment
+        android:id="@+id/deleteUserFragment"
+        android:name="com.ramossoft.ipixelinfinito.UI.DeleteUserFragment"
+        android:label="fragment_delete_user"
+        tools:layout="@layout/fragment_delete_user" />
+    <fragment
+        android:id="@+id/paymentInformationFragment"
+        android:name="com.ramossoft.ipixelinfinito.UI.PaymentInformationFragment"
+        android:label="fragment_payment_information"
+        tools:layout="@layout/fragment_payment_information" />
+</navigation>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnCreateUser"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:drawableTop="@drawable/ic_baseline_create_24"
+                android:drawingCacheQuality="auto"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Create User"
+                android:textColor="#92D3F1"
+                android:textSize="14sp"
+                app:iconPadding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnGetUser"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableTop="@drawable/ic_baseline_find_in_page_24"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Get User"
+                android:textColor="#92D3F1"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCreateUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnCreateUser"
+                app:layout_constraintTop_toTopOf="@+id/btnCreateUser" />
+
+            <Button
+                android:id="@+id/btnDeleteUser"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@drawable/ic_baseline_delete_24"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Delete User"
+                android:textColor="#92D3F1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCreateUser" />
+
+            <Button
+                android:id="@+id/btnReplaceUser"
+                android:layout_width="150dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableTop="@drawable/ic_baseline_edit_note_24"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Replace User"
+                android:textColor="#92D3F1"
+                app:layout_constraintBottom_toBottomOf="@+id/btnDeleteUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnDeleteUser"
+                app:layout_constraintTop_toTopOf="@+id/btnDeleteUser" />
+
+            <Button
+                android:id="@+id/btngetPayInfo"
+                android:layout_width="0dp"
+                android:layout_height="98dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="24dp"
+                android:drawableLeft="@drawable/ic_baseline_info_24"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Get Payment Information"
+                android:textColor="#92D3F1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnDeleteUser" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:src="@drawable/eb1f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
