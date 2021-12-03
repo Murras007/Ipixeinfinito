@@ -1,1 +1,1 @@
-# Ipixeinfinito
+download the APK from this Git, after downloading click to install if doesnt accept check the setting if can download from Unknown source, if doesnt folloew this(Search for and select Install unknown apps. Then, tap Install unknown apps again.)
